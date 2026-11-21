@@ -1,0 +1,169 @@
+:root {
+  font-family: system-ui, -apple-system, sans-serif;
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  padding: 16px;
+  background: #f6f8fa;
+  color: #1f2328;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #0d1117;
+    color: #e6edf3;
+  }
+}
+
+h1 {
+  font-size: 1.05rem;
+  margin: 0 0 12px;
+}
+
+.status {
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.status[data-state='error'] {
+  color: #cf222e;
+}
+
+.status[data-state='synced'],
+.status[data-state='nothing_new'] {
+  color: #1a7f37;
+}
+
+.status[data-state='syncing'] {
+  color: #0969da;
+}
+
+.meta {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  margin: 0 0 12px;
+  min-height: 2.5em;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+button {
+  border-radius: 6px;
+  border: 1px solid #d0d7de;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+button.primary {
+  background: #0969da;
+  border-color: #0969da;
+  color: #fff;
+}
+
+button.primary:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.secondary {
+  background: transparent;
+}
+
+.hint {
+  font-size: 0.75rem;
+  opacity: 0.75;
+  margin-top: 12px;
+}
+
+.folder-diag {
+  font-size: 0.7rem;
+  font-family: ui-monospace, monospace;
+  opacity: 0.85;
+  margin: 8px 0 0;
+  word-break: break-word;
+}
+
+.split-panel {
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid #d0d7de;
+}
+
+.split-panel h2 {
+  font-size: 0.95rem;
+  margin: 0 0 6px;
+}
+
+.split-desc {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  margin: 0 0 10px;
+}
+
+.split-mode {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.8rem;
+  margin-bottom: 10px;
+}
+
+.field input {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #d0d7de;
+}
+
+.field-hidden {
+  display: none;
+}
+
+.status[data-state='splitting'] {
+  color: #0969da;
+}
+
+button.action-success,
+button.primary.action-success {
+  background: #1a7f37 !important;
+  border-color: #1a7f37 !important;
+  color: #fff !important;
+}
+
+button.action-error,
+button.primary.action-error {
+  background: #cf222e !important;
+  border-color: #cf222e !important;
+  color: #fff !important;
+}
+
+.split-panel.action-success {
+  border-top-color: #1a7f37;
+  box-shadow: inset 0 3px 0 #1a7f37;
+}
+
+.split-panel.action-error {
+  border-top-color: #cf222e;
+  box-shadow: inset 0 3px 0 #cf222e;
+}

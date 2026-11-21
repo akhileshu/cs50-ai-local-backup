@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Choose backup folder</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Backup folder</h1>
+      <p id="hint">
+        This window stays open while you pick a folder (the toolbar popup closes during the system dialog).
+      </p>
+      <p id="status" class="status">Click below and select <strong>cs50-chat-backup</strong>.</p>
+      <button type="button" id="pick" class="primary">Choose folder…</button>
+      <button type="button" id="close" class="secondary" hidden>Close</button>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

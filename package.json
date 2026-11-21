@@ -1,0 +1,26 @@
+{
+  "name": "cs50-ai-local-chat-backup",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Back up CS50.ai conversations to a local Markdown file",
+  "type": "module",
+  "scripts": {
+    "dev": "wxt",
+    "build": "wxt build",
+    "compile": "tsc --noEmit",
+    "test": "vitest run",
+    "diagnose": "tsx scripts/diagnose.mts",
+    "ensure-backup-folder": "tsx scripts/ensure-backup-folder.mts",
+    "generate-icons": "tsx scripts/generate-duck-icons.mts",
+    "postinstall": "wxt prepare"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.287",
+    "happy-dom": "^21.0.4",
+    "typescript": "^5.9.3",
+    "playwright": "^1.52.0",
+    "tsx": "^4.19.4",
+    "vitest": "^3.2.4",
+    "wxt": "^0.21.3"
+  }
+}

@@ -1,0 +1,58 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  padding: 20px;
+  min-width: 320px;
+  background: #0d1117;
+  color: #e6edf3;
+}
+
+h1 {
+  font-size: 1rem;
+  margin: 0 0 12px;
+}
+
+.status {
+  font-size: 0.9rem;
+  margin: 0 0 16px;
+  line-height: 1.4;
+}
+
+.status.ok {
+  color: #3fb950;
+}
+
+.status.err {
+  color: #f85149;
+}
+
+#hint {
+  font-size: 0.8rem;
+  opacity: 0.85;
+  margin: 0 0 12px;
+}
+
+button {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: 1px solid #30363d;
+}
+
+button.primary {
+  background: #238636;
+  border-color: #238636;
+  color: #fff;
+}
+
+button.secondary {
+  background: transparent;
+  color: #e6edf3;
+}
