@@ -1,5 +1,5 @@
 <p align="center">
-  <span style="font-size: 120px;">🦆</span>
+  <img src="public/icon/128.png" width="200" height="200" alt="🦆 CS50 duck logo" />
 </p>
 
 <h1 align="center">CS50.ai Local Backup</h1>
@@ -9,7 +9,9 @@
 </p>
 
 <p align="center">
-  <img src="docs/image.png" alt="CS50.ai Backup extension popup while chatting on cs50.ai" width="720" />
+  <a href="docs/image.png">
+    <img src="docs/image.png" alt="CS50.ai Backup extension popup while chatting on cs50.ai" width="960" />
+  </a>
 </p>
 
 ## Why use it
