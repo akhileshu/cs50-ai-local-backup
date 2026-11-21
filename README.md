@@ -25,6 +25,8 @@
 ### 1. Install the extension
 
 ```bash
+git clone https://github.com/akhileshu/cs50-ai-local-backup.git
+cd cs50-ai-local-backup
 npm install
 npm run build
 ```
